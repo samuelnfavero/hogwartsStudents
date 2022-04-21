@@ -18,9 +18,9 @@ public class ApiServiceImpl implements ApiService {
     public Key getKey() {
         try{
             RestTemplate restTemplate = new RestTemplate();
-            HttpHeaders httpHeaders = new HttpHeaders();
-            httpHeaders.set(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE);
-            HttpEntity<?> httpEntity = new HttpEntity(httpHeaders);
+//            HttpHeaders httpHeaders = new HttpHeaders();
+//            httpHeaders.set(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE);
+//            HttpEntity<?> httpEntity = new HttpEntity(httpHeaders);
             ResponseEntity<Key> key =  restTemplate.getForEntity(KEY_URL, Key.class);
 //                    restTemplate.exchange(KEY_URL,
 //                    HttpMethod.GET,

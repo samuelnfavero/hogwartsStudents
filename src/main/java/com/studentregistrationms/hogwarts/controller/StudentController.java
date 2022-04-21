@@ -20,7 +20,7 @@ public class StudentController {
     }
 
     @GetMapping
-    public StudentResponse findById(Long id){
+    public StudentResponse findById(@RequestParam Long id){
         return studentService.findById(id);
     }
 }

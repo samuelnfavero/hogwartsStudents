@@ -12,6 +12,7 @@ import javax.persistence.*;
 @Table(name = "students")
 @Getter
 @Setter
+@NoArgsConstructor
 public class Student {
 
     @Id
