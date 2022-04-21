@@ -25,7 +25,7 @@ public class StudentServiceImpl implements StudentService {
 
         Student student = new Student(studentRequest);
         Key key = apiService.getKey();
-        student.setHouseKey(key.getKey());
+        student.setHouseKey(key.getSortingHatChoice());
         Student savedStudent = studentRepository.save(student);
         return new StudentResponse(savedStudent);
     }
