@@ -3,15 +3,12 @@ package com.studentregistrationms.hogwarts.dto.response;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
+import lombok.Setter;
 
 @AllArgsConstructor
-@NoArgsConstructor
 @Getter
-public class House {
+@Setter
+@NoArgsConstructor
+public class Value {
     private String name;
-    private String animal;
-    private String founder;
-    private List<Value> values;
 }
