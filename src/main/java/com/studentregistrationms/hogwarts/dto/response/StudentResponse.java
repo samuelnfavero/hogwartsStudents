@@ -1,8 +1,6 @@
 package com.studentregistrationms.hogwarts.dto.response;
 
-import com.studentregistrationms.hogwarts.dto.request.House;
 import com.studentregistrationms.hogwarts.model.Student;
-import lombok.AllArgsConstructor;
 
 
 public class StudentResponse {
@@ -11,9 +9,15 @@ public class StudentResponse {
     private int grade;
     private House house;
 
-
     public StudentResponse(Student student){
         this.name = student.getName();
         this.grade = student.getGrade();
+        this.house = house;
+    }
+
+    public StudentResponse(Student student, House house){
+        this.name = student.getName();
+        this.grade = student.getGrade();
+        this.house = house;
     }
 }

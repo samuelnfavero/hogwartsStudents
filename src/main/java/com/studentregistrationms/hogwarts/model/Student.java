@@ -4,12 +4,14 @@ import com.studentregistrationms.hogwarts.dto.request.StudentRequest;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "students")
 @Getter
+@Setter
 public class Student {
 
     @Id
